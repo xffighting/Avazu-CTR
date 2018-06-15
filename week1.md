@@ -81,7 +81,7 @@
 
 如下： ![CTR_coor](./EDA/CTR_coor.png)
 
-从热力图我们可以看出，C14和C17确实有着极强的相关性，并且对click的影响也类似，所以可以保留其中一个，所以在这里，我们保留C14,去掉C17。
+从热力图我们可以看出，C14和C17确实有着极强的相关性，并且对click的影响也类似，所以可以保留其中一个，所以在这里，我们保留C17,去掉C14。因为C14的取值非常多（2626），而C17的取值较少（435），可以推断C17和C14有可能是包含关系。
 
 ## 特征间联合分布情况
 
@@ -123,6 +123,8 @@
 
 以上列出的特征，对用户是否点击广告有着重大影响。都应该保留，并深入挖掘新的特征。
 
+而时间在相关性方面显示出的效果不强，则因考虑对时间维度进行挖掘。
+
 值得注意的是，这里的热力图，仅分析了数值型的特征，对字符型特征还没有考虑进去。
 
 加入字符型类别：site_id, site_domain, site_category, app_id, app_domain, app_category, device_id, device_ip, device_model, 对以上9个特征都对Click进行联合分析。
@@ -144,3 +146,7 @@
 ![Site_domain_vs_Click](EDA/Site_domain_vs_Click.png)
 
 ![Site_id_vs_Click](EDA/Site_id_vs_Click.png)
+
+从以上气泡图，我们可以推断出， device_ip，device_ip 对Click的影响相对较小，而特征与特征之间（除去Click以外）的联合分布关系，也值得思考。
+
+其中比较让人困惑的是，device_id分布非常不均，某一种device_id的点击数特别高，目前推测是采样不均导致的。或者是某种device_ip在市场的占有率本身就很高。
