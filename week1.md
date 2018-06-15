@@ -133,14 +133,6 @@
 
 ![App_id_vs_Click](EDA/App_id_vs_Click.png)
 
-![banner_pos_distribution](EDA/banner_pos_distribution.png)
-
-![Banner_pos_vs_Click](EDA/Banner_pos_vs_Click.png)
-
-![Device _Conn_Type_vs_Click](EDA/Device _Conn_Type_vs_Click.png)
-
-![Device Type_vs_Click](EDA/Device Type_vs_Click.png)
-
 ![Device_id_vs_Click](EDA/Device_id_vs_Click.png)
 
 ![Device_ip_vs_Click](EDA/Device_ip_vs_Click.png)
