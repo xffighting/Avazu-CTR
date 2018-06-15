@@ -49,37 +49,33 @@
 
 以下是全部数据集在各自特征上，值的分布情况：
 
-![click_distribution](./EDA/click_distribution.png)
+![click_distribution](EDA/click_distribution.png)
 
-![C21 distribution](./EDA/C21 distribution.png)
+![hour_distribution](EDA/hour_distribution.png)
 
-![C20 distribution](./EDA/C20 distribution.png)
+![C1_distribution](EDA/C1_distribution.png)
 
+![banner_pos_distribution](EDA/banner_pos_distribution.png)
 
+![device_type_distribution](EDA/device_type_distribution.png)
 
-![C19 distribution](./EDA/C19 distribution.png)
+![device_conn_type_distribution](EDA/device_conn_type_distribution.png)
 
-![C18 distribution](./EDA/C18 distribution.png)
+![C14_distribution](EDA/C14_distribution.png)
 
-![C17 distribution](./EDA/C17 distribution.png)
+![C15_distribution](EDA/C15_distribution.png)
 
-![C16 distribution](./EDA/C16 distribution.png)
+![C16_distribution](EDA/C16_distribution.png)
 
-![C15 distribution](./EDA/C15 distribution.png)
+![C17_distribution](EDA/C17_distribution.png)
 
-![C14 distribution](./EDA/C14 distribution.png)
+![C18_distribution](EDA/C18_distribution.png)
 
-![device_conn_type distribution](./EDA/device_conn_type distribution.png)
+![C19_distribution](EDA/C19_distribution.png)
 
-![device_type distribution](./EDA/device_type distribution.png)
+![C20_distribution](EDA/C20_distribution.png)
 
-![banner_pos distribution](./EDA/banner_pos distribution.png)
-
-![C1 distribution](./EDA/C1 distribution.png)
-
-![hour distribution](./EDA/hour distribution.png)
-
-![click_distribution](./EDA/click_distribution.png)
+![C21_distribution](EDA/C21_distribution.png)
 
 从上图可以看出，C14和C17分布图极为相似，我们可以考虑求出特征的热力图。
 
@@ -131,39 +127,28 @@
 
 加入字符型类别：site_id, site_domain, site_category, app_id, app_domain, app_category, device_id, device_ip, device_model, 对以上9个特征都对Click进行联合分析。
 
+![App_category_vs_Click](EDA/App_category_vs_Click.png)
 
+![App_domain_vs_Click](EDA/App_domain_vs_Click.png)
 
-<figure class="half">
-    <img src="./EDA/Site_domain vs Click.png">
-    <img src="./EDA/Site_id vs Click.png">
-</figure>
-<figure class="half">
-    <img src="./EDA/Site_category vs Click.png">
-    <img src="./EDA/Device_model vs Click.png">
-</figure>
-<figure class="half">
-    <img src="./EDA/Device_id vs Click.png">
-    <img src="./EDA/App_category vs Click.png">
-</figure>
-<figure class="half">
-    <img src="./EDA/App_domain vs Click.png">
-    <img src="./EDA/App_id vs Click.png">
-</figure>
+![App_id_vs_Click](EDA/App_id_vs_Click.png)
 
-![Site_domain vs Click](./EDA/Site_domain vs Click.png)
+![banner_pos_distribution](EDA/banner_pos_distribution.png)
 
-![Site_id vs Click](./EDA/Site_id vs Click.png)
+![Banner_pos_vs_Click](EDA/Banner_pos_vs_Click.png)
 
-![Site_category vs Click](./EDA/Site_category vs Click.png)
+![Device _Conn_Type_vs_Click](EDA/Device _Conn_Type_vs_Click.png)
 
-![Device_model vs Click](./EDA/Device_model vs Click.png)
+![Device Type_vs_Click](EDA/Device Type_vs_Click.png)
 
-![Device_ip vs Click](./EDA/Device_ip vs Click.png)
+![Device_id_vs_Click](EDA/Device_id_vs_Click.png)
 
-![Device_id vs Click](./EDA/Device_id vs Click.png)
+![Device_ip_vs_Click](EDA/Device_ip_vs_Click.png)
 
-![App_category vs Click](./EDA/App_category vs Click.png)
+![Device_model_vs_Click](EDA/Device_model_vs_Click.png)
 
-![App_domain vs Click](./EDA/App_domain vs Click.png)
+![Site_category_vs_Click](EDA/Site_category_vs_Click.png)
 
-![App_id vs Click](./EDA/App_id vs Click.png)
+![Site_domain_vs_Click](EDA/Site_domain_vs_Click.png)
+
+![Site_id_vs_Click](EDA/Site_id_vs_Click.png)
