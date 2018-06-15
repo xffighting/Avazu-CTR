@@ -1,12 +1,10 @@
- # 第三部分 
+ # 第三部分 各数据特征分布情况以及特征间联合分布情况的分析 
 
- # 各数据特征分布情况以及特征间联合分布情况的分析
 
-## — 谢飞
 
- ## 1. 各数据特征分布情况
+## 1. 各数据特征分布情况
 
-整个数据集的特征分布情况：
+首先分析一下整个数据集的特征分布情况，参照以下列表：
 
 - Column id: 每个特征的名称
 - Example value: 该特征取值的样本
@@ -38,8 +36,6 @@
 | C19              | 33…1959                                          | 68                    |
 | C20              | -1 100000 100001…100248                          | 172                   |
 | C21              | 1 … 219                                          | 60                    |
-
- 
 
  
 
@@ -83,7 +79,7 @@
 
 从热力图我们可以看出，C14和C17确实有着极强的相关性，并且对click的影响也类似，所以可以保留其中一个，所以在这里，我们保留C17,去掉C14。因为C14的取值非常多（2626），而C17的取值较少（435），可以推断C17和C14有可能是包含关系。
 
-## 特征间联合分布情况
+## 3. 特征间联合分布情况
 
 由于数据集过于巨大，进行数据可视化的时候遇到了一些障碍，如内存不足，运行时间过于缓慢，所以本部分采用了下采样， 取0.05的数据集进行随机采样，生成了如下分析，所以分析结果仅供参考，并不能完全代表整个数据集的分布情况。
 
@@ -127,7 +123,15 @@
 
 值得注意的是，这里的热力图，仅分析了数值型的特征，对字符型特征还没有考虑进去。
 
-加入字符型类别：site_id, site_domain, site_category, app_id, app_domain, app_category, device_id, device_ip, device_model, 对以上9个特征都对Click进行联合分析。
+加入字符型类别：site_id, site_domain, site_category, app_id, app_domain, app_category, device_id, device_ip, device_model, 对以上9个特征都对Click总数进行联合分析。
+
+
+
+### Click 总数与字符型类别的联合分布
+
+
+
+
 
 ![App_category_vs_Click](EDA/App_category_vs_Click.png)
 
@@ -150,3 +154,7 @@
 从以上气泡图，我们可以推断出， device_ip，device_ip 对Click的影响相对较小，而特征与特征之间（除去Click以外）的联合分布关系，也值得思考。
 
 其中比较让人困惑的是，device_id分布非常不均，某一种device_id的点击数特别高，目前推测是采样不均导致的。或者是某种device_ip在市场的占有率本身就很高。
+
+
+
+<div class='tableauPlaceholder' id='viz1529076377559' style='position: relative'><noscript><a href='#'><img alt='仪表板 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CT&#47;CTR-C17_vs_Click&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CTR-C17_vs_Click&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CT&#47;CTR-C17_vs_Click&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1529076377559');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
