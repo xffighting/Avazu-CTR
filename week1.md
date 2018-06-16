@@ -167,6 +167,4 @@
 
 ![Site_domain_vs_click](EDA/Site_domain_vs_click.png)
 
-
-
 ![Site_id_vs_click](EDA/Site_id_vs_click.png)
