@@ -152,7 +152,7 @@
 
 ---
 
-![App_id_vs_Click](EDA/App_id_vs_click.png)
+![App_id_vs_Click](EDA/App_id_vs_Click.png)
 
 上图是App id 与Click 三个维度的关系，我们从App id vs Click Count 和 App id vs Click Sum可以看到，这两者的分布几乎一致。
 
