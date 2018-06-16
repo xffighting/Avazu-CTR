@@ -152,7 +152,7 @@
 
 ---
 
-![App_id_vs_Click](EDA/App_id_vs_Click.png)
+![App_id_vs_Click](EDA/App_id_vs_click.png)
 
 上图是App id 与Click 三个维度的关系，我们从App id vs Click Count 和 App id vs Click Sum可以看到，这两者的分布几乎一致。
 
@@ -260,7 +260,7 @@ C18与点击率的关系，在一定程度上，也跟数量级有关系。
 
 ---
 
-![Device_model_vs_click](EDA/Device_model_vs_click.png)
+![Device_model_vs_click](EDA/Device_model_vs_Click.png)
 
 上图是Device Model 与Click 三个维度的关系.
 
@@ -292,7 +292,7 @@ C18与点击率的关系，在一定程度上，也跟数量级有关系。
 
 ---
 
-![Site_category_vs_click](EDA/Site_category_vs_click.png)
+![Site_category_vs_click](EDA/Site_category_vs_Click.png)
 
 上图是Site Category 与Click 三个维度的关系.
 
@@ -302,13 +302,13 @@ C18与点击率的关系，在一定程度上，也跟数量级有关系。
 
 ---
 
-![Site_domain_vs_click](EDA/Site_domain_vs_click.png)
+![Site_domain_vs_click](EDA/Site_domain_vs_Click.png)
 
 上图类似的分布我们也碰到很多了，说明在Site Domain这个feature上，投放量对点击数是有一定促进作用的，但是对点击率的帮助不大。
 
 ---
 
-![Site_id_vs_click](EDA/Site_id_vs_click.png)
+![Site_id_vs_click](EDA/Site_id_vs_Click.png)
 
 结论同上。
 
