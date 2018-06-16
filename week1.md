@@ -127,9 +127,7 @@
 
 
 
-### Click 总数与字符型类别的联合分布
-
-
+### Click 点记录，出现次数和点击次数与其他特征的联合分布
 
 ![App_cat_vs_Click](EDA/App_cat_vs_Click.png)
 
@@ -172,4 +170,3 @@
 
 
 ![Site_id_vs_click](EDA/Site_id_vs_click.png)
-
