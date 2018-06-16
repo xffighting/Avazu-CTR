@@ -131,30 +131,45 @@
 
 
 
-
-
-![App_category_vs_Click](EDA/App_category_vs_Click.png)
+![App_cat_vs_Click](EDA/App_cat_vs_Click.png)
 
 ![App_domain_vs_Click](EDA/App_domain_vs_Click.png)
 
 ![App_id_vs_Click](EDA/App_id_vs_Click.png)
 
-![Device_id_vs_Click](EDA/Device_id_vs_Click.png)
-
-![Device_ip_vs_Click](EDA/Device_ip_vs_Click.png)
-
-![Device_model_vs_Click](EDA/Device_model_vs_Click.png)
-
-![Site_category_vs_Click](EDA/Site_category_vs_Click.png)
-
-![Site_domain_vs_Click](EDA/Site_domain_vs_Click.png)
-
-![Site_id_vs_Click](EDA/Site_id_vs_Click.png)
-
-从以上气泡图，我们可以推断出， device_ip，device_ip 对Click的影响相对较小，而特征与特征之间（除去Click以外）的联合分布关系，也值得思考。
-
-其中比较让人困惑的是，device_id分布非常不均，某一种device_id的点击数特别高，目前推测是采样不均导致的。或者是某种device_ip在市场的占有率本身就很高。
 
 
+![Banner_pos_vs_click](EDA/Banner_pos_vs_click.png)
 
-<div class='tableauPlaceholder' id='viz1529076377559' style='position: relative'><noscript><a href='#'><img alt='仪表板 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CT&#47;CTR-C17_vs_Click&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CTR-C17_vs_Click&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CT&#47;CTR-C17_vs_Click&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1529076377559');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+![C1_vs_click](EDA/C1_vs_click.png)
+
+![C15_vs_Click](EDA/C15_vs_Click.png)
+
+![C16_vs_click](EDA/C16_vs_click.png)
+
+![C17_vs_click](EDA/C17_vs_click.png)
+
+![C18_vs_click](EDA/C18_vs_click.png)
+
+![C19_vs_click](EDA/C19_vs_click.png)
+
+![C20_vs_click](EDA/C20_vs_click.png)
+
+![C21_vs_click](EDA/C21_vs_click.png)
+
+![Device_conn_type_vs_click](EDA/Device_conn_type_vs_click.png)
+
+![Device_model_vs_click](EDA/Device_model_vs_click.png)
+
+![Device_type_vs_click](EDA/Device_type_vs_click.png)
+
+![Hour_vs_click](EDA/Hour_vs_click.png)
+
+![Site_category_vs_click](EDA/Site_category_vs_click.png)
+
+![Site_domain_vs_click](EDA/Site_domain_vs_click.png)
+
+
+
+![Site_id_vs_click](EDA/Site_id_vs_click.png)
+
