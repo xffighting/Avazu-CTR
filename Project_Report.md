@@ -1787,8 +1787,11 @@ FFM模型从推荐系统模型PITF发展而来, 将特征进行了分组,即fiel
 FM模型的方程为:
 
 $y(\mathbf{x}) = w_0+ \sum_{i=1}^n w_i x_i + \sum_{i=1}^n  \sum_{j=i+1}^n \langle \mathbf{v}_i, \mathbf{v}_j \rangle x_i x_j  \tag{1}$
+
 而FFM模型的方程为:
+
 $y(\mathbf{x}) = w_0 + \sum_{i=1}^n w_i x_i + \sum_{i=1}^n  \sum_{j=i+1}^n \langle \mathbf{v}_{i, f_j}, \mathbf{v}_{j, f_i} \rangle  x_i x_j \tag{2}$
+
 从公式即可知道FFM与FM模型的不同之处在于, 对于每个特征定义了其所对应的field, 即fi和fj.
 
 FFM的预测复杂度是 
