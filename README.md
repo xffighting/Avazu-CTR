@@ -1,8 +1,7 @@
 # 项目文件说明
-- /EDA 数据探索生成的图表
+- /LR-FeiXie 谢飞LR模型的代码
+- /GBDT_LR——FuXiong 付雄GBDT模型的代码
+
 - /meeting 每次的会议记录
-- /doc 项目过程中产生的文档文件
-- /meeting 小组会议记录
 - /picture 汇报文档中的图片引用
-- /test 测试数据集中的统计信息
-- LR.md 项目汇报文档
+- /Project_Report.md 项目汇报文档
